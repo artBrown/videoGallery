@@ -1,0 +1,74 @@
+.video {
+  background-color: honeydew;
+  float:left;
+}
+.video, video {
+  max-width: 16rem;
+}
+video {
+  height:  auto;
+  preload: none;
+  background-color:honeydew;
+}
+video:hover {
+  cursor:pointer;
+}
+.controls {
+  font-size: 1rem;
+  height:    auto;
+  overflow:  hidden;
+}
+button, .progress {
+  display: inline-block;
+  height:  1rem;
+}
+.buttons {
+  overflow: hidden;
+  width: 50%;
+  float: left;
+}
+button {
+  width:            1rem;
+  text-align:       center;
+  padding:          0;
+  background-color: transparent;
+  border:           0;
+}
+button:disabled {
+  -ms-filter:     "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+  filter:         alpha(opacity=50); /* IE 5-7 */
+  -moz-opacity:   0.5; /* Netscape */
+  -khtml-opacity: 0.5; /* Safari 1.x */
+  opacity:        0.5;
+}
+.buttons .fa {
+  vertical-align: .1rem;
+  font-size:.8rem;
+}
+.bar {
+  overflow: hidden;
+  width:            49%;
+  display:          inline-block;
+  border:           0;
+  border-radius:    .2rem;
+  background-color: honeydew;
+  background-image: linear-gradient(top, #fff, honeydew);
+  background-image: -moz-linear-gradient(top, #fff, honeydew);
+  background-image: -webkit-linear-gradient(top, #fff, honeydew);
+  background-image: -o-linear-gradient(top, #fff, honeydew);
+  background-image: -ms-linear-gradient(top, #fff, honeydew); /* shadow */
+  box-shadow:       0 0 10px #ccc;
+}
+.progress {
+  border-radius:    .2rem;
+  width:            0;
+  background-color: lightyellow;
+  background-image: linear-gradient(top, #ffffff, lightyellow);
+  background-image: -moz-linear-gradient(top, #ffffff, lightyellow);
+  background-image: -webkit-linear-gradient(top, #ffffff, lightyellow);
+  background-image: -o-linear-gradient(top, #ffffff, lightyellow);
+  background-image: -ms-linear-gradient(top, #ffffff, lightyellow);
+}
+body {
+  position: relative;
+}
